@@ -1,0 +1,58 @@
+.cmd {
+    position: relative;
+    height: 100%;
+    //background: #06d6a0;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        position: relative;
+        height: 5rem;
+        background: rgba(7,59,76,.1);
+        flex-shrink: 0;
+        display: flex;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+
+
+        & > div:nth-child(1) {
+            position: relative;
+            width: 8rem;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > div > img{
+                position: relative;
+                width: 3rem;
+                cursor: pointer;
+                //border-radius: 3rem;
+                //transition: all ease-in-out 300ms;
+            }
+            & > div > img:hover{
+                //box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            }
+        }
+
+        & > div:nth-child(2) {
+            position: relative;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color:#073b4c;
+            font-weight: 500;
+        }
+
+        & > div:nth-child(3) {
+            position: relative;
+            width: 8rem;
+        }
+    }
+
+    .body {
+        position: relative;
+        flex: 1;
+        //background: #fefefe;
+    }
+}

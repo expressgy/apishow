@@ -1,0 +1,18 @@
+.admin{
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    .left{
+        position: relative;
+        min-width: 15rem;
+        background: #118ab2;
+        flex: 1;
+    }
+    .right{
+        position: relative;
+        flex: 3;
+
+    }
+}
