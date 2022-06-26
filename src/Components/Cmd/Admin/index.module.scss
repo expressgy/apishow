@@ -1,18 +1,94 @@
-.admin{
+.admin {
     position: relative;
     display: flex;
     height: 100%;
-    overflow: hidden;
 
-    .left{
+    .left {
         position: relative;
-        min-width: 15rem;
-        background: #118ab2;
+        min-width: 18rem;
+        max-width: 25rem;
+        height: 100%;
+        background: #fafafa;
         flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        & > div:nth-child(1) {
+            position: relative;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333333;
+            line-height: 3em;
+            flex-shrink: 0;
+        }
+
+        & > div:nth-child(2){
+            position: relative;
+            flex: 1;
+            overflow-y: auto;
+
+            & > div{
+                position: relative;
+                & > div{
+                    & > img{
+                        height: 2rem;
+                        display: inline-block;
+                        position: relative;
+                        top: -0.2rem;
+                        margin-right: 1rem;
+                    }
+                    position: relative;
+                    background: #EF476F;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    margin: 1rem 2rem;
+                    border-radius: 0.3rem;
+                    line-height: 2.5em;
+                    font-weight: 400;
+                    cursor: pointer;
+                    color:#fefefe;
+                    transition: all ease-in-out 300ms;
+                }
+
+                & > div.choose{
+                    background: #77A1D3 !important;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3) !important;  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                    background: #FC5C7D !important;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D) !important;  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #6A82FB, #FC5C7D) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                    //background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%) !important;
+
+                    font-weight: bold;
+                    color: #000;
+
+                }
+
+                & > div:hover{
+                    background: #06d6a0;
+                    color: #000;
+                }
+            }
+        }
+
+        & > div:nth-child(3){
+            position: relative;
+            flex-shrink: 0;
+            line-height: 3em;
+            color: #ababab;
+            text-align: center;
+        }
     }
-    .right{
+
+    .right {
         position: relative;
         flex: 3;
-
+        overflow: hidden;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
     }
 }

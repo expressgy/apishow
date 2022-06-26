@@ -23,8 +23,9 @@ export default function Cmd() {
         </header>
         <div className={ css.body }>
             <Routes>
-                <Route path={'/admin/*'} element={ <Admin/> }></Route>
-                <Route path={'/debug'} element={ <Debug/> }></Route>
+                //  这里只能写子路由，不能带根路径，不然子路由失效如 '/cmd/admin/*'XXXXXXXXXXXXXXXXXXX错误
+                <Route path={'admin/*'} element={ <Admin/> }></Route>
+                <Route path={'debug'} element={ <Debug/> }></Route>
                 <Route path="*" element={ <Admin/> } />
             </Routes>
         </div>
